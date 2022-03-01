@@ -5,6 +5,6 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - back-api
-  back-api:
+      - back-api.default.svc.cluster.local
+  back-api.default.svc.cluster.local:
     image: redis:3.2.0
