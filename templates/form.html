@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/static/currencyconverter.css">
+</head>
+<body>
+    <h1>USD to INR</h1>
+    <div id="output">
+        <form method="post">
+            $ <input type="number"
+                    name="dollars"
+                    step=".01"
+                    min="0.01"
+                    placeholder="Dollars"
+                    >
+            <input type="submit"
+                    value="Convert">
+        </form>
+        {% if inr %}
+        <h3>
+            ${{usd}} =
+            ₹{{inr}}
+        </h3>
+        {% endif %}
+    </div>
+</body>
+</html>

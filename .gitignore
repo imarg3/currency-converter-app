@@ -1,0 +1,16 @@
+.git
+.DS_Store
+.dockerignore
+
+# PyCharm specific folder
+.idea
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python Specific
+__pycache__/

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: currency-converter
+  labels:
+    env: production
+    author: arpitgupta
+    application_type: ui
+    release-version: "1.0.0"
+spec:
+  containers:
+  - name: currency-converter
+    image: admincoder/currency-converter:v1.0.0
