@@ -5,7 +5,7 @@ import redis
 
 app = Flask(__name__)
 default_key = '1'
-cache = redis.StrictRedis(host='back-api', port=6379, db=0)
+cache = redis.StrictRedis(host='back-api.default.svc.cluster.local', port=6379, db=0)
 cache.set(default_key, "one")
 
 
