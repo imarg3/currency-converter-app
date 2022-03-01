@@ -21,7 +21,7 @@ jobs:
           name: Push application Docker image
           command: |
             docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-            docker tag currencyconverterapp_currency-converter-app $DOCKER_HUB_USER_ID/currency-converter:1.1.0
+            docker tag currencyconverterapp_currency-converter-app $DOCKER_HUB_USER_ID/currency-converter:1.2.0
             docker tag currencyconverterapp_currency-converter-app $DOCKER_HUB_USER_ID/currency-converter:latest
             docker push $DOCKER_HUB_USER_ID/currency-converter:1.1.0
             docker push $DOCKER_HUB_USER_ID/currency-converter:latest
